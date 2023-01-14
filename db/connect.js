@@ -1,8 +1,8 @@
 // CONEXION PROTOCOL??
 const dotenv = require('dotenv');
 dotenv.config();
-const MongoClient = require('mongodb').MongoClient;
-
+// const MongoClient = require('mongodb').MongoClient;
+const { MongoClient } = require('mongodb');
 let _db;
 
 const initDb = (callback) => {
