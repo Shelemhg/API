@@ -10,10 +10,10 @@ GET http://localhost:3000/contacts/63c0b0f3e696197ddb44ac98
 
 // PRODUCTION Deploy
 ###
-GET https://https://api-64im.onrender.com/contacts
+GET https://api-64im.onrender.com/contacts
 ###
-GET https://https://api-64im.onrender.com/63c0b0f3e696197ddb44ac96
+GET https://api-64im.onrender.com/63c0b0f3e696197ddb44ac96
 ###
-GET https://https://api-64im.onrender.com/63c0b0f3e696197ddb44ac97
+GET https://api-64im.onrender.com/63c0b0f3e696197ddb44ac97
 ###
-GET https://https://api-64im.onrender.com/63c0b0f3e696197ddb44ac98
+GET https://api-64im.onrender.com/63c0b0f3e696197ddb44ac98
