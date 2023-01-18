@@ -49,6 +49,28 @@
     };
 
     // TODO: const updateContact
+    const updateContact = async (req, res) => {
+        const userId = new ObjectId(req.params.id);
+        const newInfo = {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.email,
+            favoriteColor: req.body.favoriteColor,
+            birthday: req.body.birthday
+        };
+        const response = await mongodb    
+            .getDb()
+            .db()
+            .collection('contacts')
+            .replaceOne({ _id: userId }, newInfo);
+        if (response.acknowledged) {
+            res.status(201).json(response);
+            console.log('Info saved to DB succesfully');
+        } else {
+            res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+            console.log('Upload of info failed.');
+        }
+    };
 
     // TODO: const deleteContact
     const deleteContact = async (req, res) => {
@@ -72,6 +94,7 @@
             getAll, 
             getSingle, 
             createContact,
+            updateContact,
             deleteContact
         };
     //FINISHED

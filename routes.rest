@@ -37,5 +37,18 @@ content-type: application/json
     "birthday":"16/02/2000"
 }
 
+### PUT contact 
+PUT http://localhost:3000/contacts/63c0b0f3e696197ddb44ac98 HTTP/1.1
+content-type: application/json
+
+{
+    "firstName":"Dale2",
+    "lastName":"Anderson2", 
+    "email":"danderson@test.com", 
+    "favoriteColor":"Yellow", 
+    "birthday":"02/24/91"
+}
+
+
 ### DELETE contact 
 DELETE http://localhost:3000/contacts/63c733e38efe6c93f4d43f47 HTTP/1.1

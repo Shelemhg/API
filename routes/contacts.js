@@ -12,7 +12,9 @@ router.get('/:id', contactsController.getSingle);
 
 // TODO:  router.post SOMETHING contactsController.createContact
 router.post('/', contactsController.createContact);
+
 // TODO: router.put SOMETHING contactsController.updateContact
+router.put('/:id', contactsController.updateContact);
 
 // TODO: router.delete SOMETHING contactsController.deleteContact
 router.delete('/:id', contactsController.deleteContact);
