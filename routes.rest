@@ -36,3 +36,6 @@ content-type: application/json
     "favoriteColor":"Pink",
     "birthday":"16/02/2000"
 }
+
+### DELETE contact 
+DELETE http://localhost:3000/contacts/63c733e38efe6c93f4d43f47 HTTP/1.1
