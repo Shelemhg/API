@@ -45,11 +45,13 @@
         } else {
             res.status(500).json(response.error || 'Some error occurred while creating the contact.');
             console.log('Upload of info failed.');
-        }        
+        }
     };
 
     // TODO: const updateContact
 
     // TODO: const deleteContact
+
+
     module.exports = { getAll, getSingle, createContact};
     //FINISHED
