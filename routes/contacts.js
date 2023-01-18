@@ -11,11 +11,10 @@ router.get('/', contactsController.getAll);
 router.get('/:id', contactsController.getSingle);
 
 // TODO:  router.post SOMETHING contactsController.createContact
-
+router.post('/', contactsController.createContact);
 // TODO: router.put SOMETHING contactsController.updateContact
 
 // TODO: router.delete SOMETHING contactsController.deleteContact
-
 
 
 module.exports = router;

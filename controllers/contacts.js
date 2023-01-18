@@ -24,22 +24,32 @@
     });
     };
 
-
     // TODO:  const createContact
-
-    const createContact = async (req, res, next) => {
-    
-
-
-    }
+    const createContact = async (req, res) => {
+        // const userData = new ObjectId(req.params.data);
+        const newContact = {
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.email,
+            favoriteColor: req.body.favoriteColor,
+            birthday: req.body.birthday
+        };
+        const response = await mongodb    
+            .getDb()
+            .db()
+            .collection('contacts')
+            .insertOne(newContact);
+        if (response.acknowledged) {
+            res.status(201).json(response);
+            console.log('Info saved to DB succesfully');
+        } else {
+            res.status(500).json(response.error || 'Some error occurred while creating the contact.');
+            console.log('Upload of info failed.');
+        }        
+    };
 
     // TODO: const updateContact
 
     // TODO: const deleteContact
-
-
-
-
-
-    module.exports = { getAll, getSingle };
+    module.exports = { getAll, getSingle, createContact};
     //FINISHED

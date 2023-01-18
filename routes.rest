@@ -17,3 +17,22 @@ GET https://api-64im.onrender.com/contacts/63c0b0f3e696197ddb44ac96
 GET https://api-64im.onrender.com/contacts/63c0b0f3e696197ddb44ac97
 ###
 GET https://api-64im.onrender.com/contacts/63c0b0f3e696197ddb44ac98
+
+
+
+
+### ----------------------------------------------------
+
+
+
+### Create NEW USER
+POST http://localhost:3000/contacts HTTP/1.1
+content-type: application/json
+
+{ 
+    "firstName":"Mary",
+    "lastName":"Star",
+    "email":"mstar@test1.com",
+    "favoriteColor":"Pink",
+    "birthday":"16/02/2000"
+}

@@ -1,0 +1,10 @@
+{
+    "_id": {
+      "$oid": "63c0b0f3e696197ddb44ac96"
+    },
+    "firstName": "Saila",
+    "lastName": "Smith",
+    "email": "ss@test.com",
+    "favoriteColor": "Blue",
+    "birthday": "11/10/19"
+  }
