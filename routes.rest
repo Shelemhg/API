@@ -30,7 +30,7 @@ POST http://localhost:3000/contacts HTTP/1.1
 content-type: application/json
 
 { 
-    "firstName":"Mary",
+    "firstName":"Mary2",
     "lastName":"Star",
     "email":"mstar@test1.com",
     "favoriteColor":"Pink",
@@ -38,7 +38,7 @@ content-type: application/json
 }
 
 ### PUT contact 
-PUT http://localhost:3000/contacts/63c0b0f3e696197ddb44ac98 HTTP/1.1
+PUT http://localhost:3000/contacts/63c9cf0c51057c694b6e4c85 HTTP/1.1
 content-type: application/json
 
 {

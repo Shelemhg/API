@@ -64,7 +64,7 @@
             .collection('contacts')
             .replaceOne({ _id: userId }, newInfo);
         if (response.acknowledged) {
-            res.status(201).json(response);
+            res.status(204).json(response);
             console.log('Info saved to DB succesfully');
         } else {
             res.status(500).json(response.error || 'Some error occurred while creating the contact.');
@@ -82,7 +82,7 @@
             .deleteOne({ _id: userId }, true);
             console.log(response);
         if (response.deletedCount > 0) {
-            res.status(204).send();
+            res.status(200).send();
             console.log(userId + ' DELETED');
             } else {
             res.status(500).json(response.error || 'An error occurred while deleting the contact.');
