@@ -3,5 +3,8 @@ const router = express.Router();
 
 router.use('/contacts', require('./contacts'))
 
+//ADDED SWAGGER ROUTES
+router.use('/', require('./swagger'));
+
 module.exports = router;
 //FINISHED

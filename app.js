@@ -1,6 +1,7 @@
 	const express = require('express');
 	const bodyParser = require('body-parser');
 	const mongodb = require('./db/connect');
+const router = require('./routes');
 
 	const port = process.env.PORT || 3000;
 
@@ -22,7 +23,6 @@
 		console.log(`Connected to DB and listening on ${port}`);
 	}
 	});
-	//FINISHED
 
 
 	// app.get('/', (req, res) => {
