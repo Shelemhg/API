@@ -12,7 +12,7 @@ schemes: ['http'],
 // const outputFile = './path/swagger-output.json';
 // const endpointsFiles = ['./path/endpointsUser.js', './path/endpointsBook.js'];
 
-const outputFile = './swagger-output.json';
+const outputFile = './swagger.json';
 const endpointsFiles = ['./app.js'];
 
 /* NOTE: if you use the express Router, you must pass in the 

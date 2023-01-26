@@ -26,10 +26,9 @@
     });
     };
 
-    // TODO:  const createContact
+
     const createContact = async (req, res) => {
         // #swagger.tags = ['newContact']
-        // const userData = new ObjectId(req.params.data);
         const newContact = {
             firstName: req.body.firstName,
             lastName: req.body.lastName,
@@ -51,7 +50,7 @@
         }
     };
 
-    // TODO: const updateContact
+
     const updateContact = async (req, res) => {
         // #swagger.tags = ['updateContact']
         const userId = new ObjectId(req.params.id);
@@ -76,7 +75,7 @@
         }
     };
 
-    // TODO: const deleteContact
+
     const deleteContact = async (req, res) => {
         // #swagger.tags = ['deleteContact']
         const userId = new ObjectId(req.params.id);
@@ -102,4 +101,3 @@
             updateContact,
             deleteContact
         };
-    //FINISHED
