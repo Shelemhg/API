@@ -42,7 +42,7 @@ PUT http://localhost:3000/contacts/63c9cf0c51057c694b6e4c85 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Dale2",
+    "firstName":"Dale4",
     "lastName":"Anderson2", 
     "email":"danderson@test.com", 
     "favoriteColor":"Yellow", 
@@ -51,7 +51,7 @@ content-type: application/json
 
 
 ### DELETE contact 
-DELETE http://localhost:3000/contacts/63c733e38efe6c93f4d43f47 HTTP/1.1
+DELETE http://localhost:3000/contacts/63c9cf0c51057c694b6e4c85 HTTP/1.1
 
 
 ------------------------------
@@ -61,7 +61,7 @@ POST http://api-64im.onrender.com/contacts HTTP/1.1
 content-type: application/json
 
 { 
-    "firstName":"Mary2",
+    "firstName":"Mary3",
     "lastName":"Star",
     "email":"mstar@test1.com",
     "favoriteColor":"Pink",
@@ -69,11 +69,11 @@ content-type: application/json
 }
 
 ### PUT contact 
-PUT http://api-64im.onrender.com/contacts/63c9cf0c51057c694b6e4c85 HTTP/1.1
+PUT http://api-64im.onrender.com/contacts/63c9d3644d13c03099181fb1 HTTP/1.1
 content-type: application/json
 
 {
-    "firstName":"Dale2",
+    "firstName":"Mary4",
     "lastName":"Anderson2", 
     "email":"danderson@test.com", 
     "favoriteColor":"Yellow", 
@@ -82,4 +82,4 @@ content-type: application/json
 
 
 ### DELETE contact 
-DELETE http://api-64im.onrender.com/contacts/63c733e38efe6c93f4d43f47 HTTP/1.1
+DELETE http://api-64im.onrender.com/contacts/63c9d3644d13c03099181fb1 HTTP/1.1

@@ -3,6 +3,7 @@
 
     // When a GET request is received, this function is executed and it prints to the browser all the contacts in the database.
     const getAll = async (req, res, next) => {
+    // #swagger.tags = ['contacts']
     const result = await mongodb.getDb().db().collection('contacts').find();
     result.toArray().then((lists) => {
         res.setHeader('Content-Type', 'application/json');
@@ -12,6 +13,7 @@
 
     // When a GET request is received, this function expects an ID and prints to the web browser all the info of the ID
     const getSingle = async (req, res, next) => {
+    // #swagger.tags = ['oneCotact']
     const userId = new ObjectId(req.params.id);
     const result = await mongodb
         .getDb()
@@ -26,6 +28,7 @@
 
     // TODO:  const createContact
     const createContact = async (req, res) => {
+        // #swagger.tags = ['newContact']
         // const userData = new ObjectId(req.params.data);
         const newContact = {
             firstName: req.body.firstName,
@@ -50,6 +53,7 @@
 
     // TODO: const updateContact
     const updateContact = async (req, res) => {
+        // #swagger.tags = ['updateContact']
         const userId = new ObjectId(req.params.id);
         const newInfo = {
             firstName: req.body.firstName,
@@ -63,7 +67,7 @@
             .db()
             .collection('contacts')
             .replaceOne({ _id: userId }, newInfo);
-        if (response.acknowledged) {
+        if (response.modifiedCount > 0) {
             res.status(204).json(response);
             console.log('Info saved to DB succesfully');
         } else {
@@ -74,6 +78,7 @@
 
     // TODO: const deleteContact
     const deleteContact = async (req, res) => {
+        // #swagger.tags = ['deleteContact']
         const userId = new ObjectId(req.params.id);
         const response = await mongodb
             .getDb()
