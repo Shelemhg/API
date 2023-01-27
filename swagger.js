@@ -6,7 +6,7 @@ info: {
 	description: 'Description',
 },
 host: 'api-64im.onrender.com',
-schemes: ['http'],
+schemes: ['http']
 };
 
 // const outputFile = './path/swagger-output.json';
