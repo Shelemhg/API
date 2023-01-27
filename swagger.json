@@ -8,7 +8,7 @@
   "host": "api-64im.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/api-docs": {
