@@ -5,7 +5,7 @@ info: {
 	title: 'My API',
 	description: 'Description',
 },
-host: 'localhost:3000',
+host: 'api-64im.onrender.com',
 schemes: ['http'],
 };
 
