@@ -32,7 +32,7 @@ content-type: application/json
 { 
     "firstName":"Mary2",
     "lastName":"Star",
-    "email":"mstar@test1.com",
+    "email":"mstar@abc.com",
     "favoriteColor":"Pink",
     "birthday":"16/02/2000"
 }
@@ -44,7 +44,7 @@ content-type: application/json
 {
     "firstName":"Dale4",
     "lastName":"Anderson2", 
-    "email":"danderson@test.com", 
+    "email":"danderson@asd.com", 
     "favoriteColor":"Yellow", 
     "birthday":"02/24/91"
 }
@@ -63,7 +63,7 @@ content-type: application/json
 { 
     "firstName":"Mary3",
     "lastName":"Star",
-    "email":"mstar@test1.com",
+    "email":"mstar@aqwe.com",
     "favoriteColor":"Pink",
     "birthday":"16/02/2000"
 }
@@ -75,7 +75,7 @@ content-type: application/json
 {
     "firstName":"Mary4",
     "lastName":"Anderson2", 
-    "email":"danderson@test.com", 
+    "email":"danderson@water.com", 
     "favoriteColor":"Yellow", 
     "birthday":"02/24/91"
 }
